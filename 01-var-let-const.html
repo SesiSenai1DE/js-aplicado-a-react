@@ -10,19 +10,29 @@
 
   <script>
   
-  
-    //1ª Digitação (aqui) 
+  // Jeito antigo de usar variáveis
+  // var meuNome = 'Ignacio';
+
+  // Jeito moderno de usar variáveis
+  let meuNome = 'Ignacio';
+
+  // Se tiver certeza que nunca muda (usar constante)
+  // const meuNome ='Ignacio';
+   
 
 
     exibirNaTela(meuNome);
 
     exibirNaTela('==========================');
 
+    let idade = 20;
+    let mensagem; 
 
-
-    //2ª Digitação (aqui) 
-
-
+    if (idade === 20) {
+      mensagem = 'É maior de idade';
+    } else {
+      mensagem ='É menor de idade';
+    }
 
     exibirNaTela(mensagem);
 
