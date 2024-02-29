@@ -32,8 +32,6 @@
     exibirNaTela( ordenar(...cursos) );
   
 
-
-
     // _________________________
 
     exibirNaTela('======================');
@@ -54,19 +52,28 @@
     // _________________________
     // Exercício: Transforme as funções acima em arrow function
 
+     const testeOrdenar = (...parametros) => parametros.sort();
 
-
-    //3ª Digitação (aqui) 
-
-
+     exibirNaTela( testeOrdenar ('Jair', 'Larissa', 'Andrea'));
+     exibirNaTela( testeOrdenar ('RHCP', 'Mega Death', 'Metallica', 'Rush', 'Pink Floyd'));
+    
 
     // _________________________
     exibirNaTela('======================');
 
 
 
-    //4ª Digitação (aqui) 
+    const somaValores = (...valores) => {
+        let total = 0;
 
+        for(let valor of valores) {
+            total += valor;
+        }
+        return total;
+    }
+
+    exibirNaTela( somaValores(10,20) );
+    exibirNaTela( somaValores(5, 3, 35, 55, 10,20) );
     
 
     function exibirNaTela(texto) {
